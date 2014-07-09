@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>显示文章列表</title>
+</head>
+<body>
+	<a href="__CONTROL__/add">发表文章</a>
+	<table border='1' width='100%'>
+		<tr>
+			<td>ID</td>
+			<td>标题</td>
+			<td>内容</td>
+		</tr>
+
+		<list from="$data" name="n">
+
+			<tr>
+				<td>{$n.id}</td>
+				<td>{$n.title}</td>
+				<td>{$n.content}</td>
+			</tr>
+
+		</list>
+	</table>
+	{$page}
+</body>
+</html>
